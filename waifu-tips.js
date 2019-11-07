@@ -15,7 +15,6 @@ function loadWidget(waifuPath, apiPath) {
 				<span class="fa fa-lg fa-user-circle"></span>
 				<span class="fa fa-lg fa-street-view"></span>
 				<span class="fa fa-lg fa-camera-retro"></span>
-				<span class="fa fa-lg fa-info-circle"></span>
 				<span class="fa fa-lg fa-times"></span>
 			</div>
 		</div>`);
@@ -41,9 +40,6 @@ function loadWidget(waifuPath, apiPath) {
 			showMessage("照好了嘛，是不是很可爱呢？", 6000, 9);
 			Live2D.captureName = "photo.png";
 			Live2D.captureFrame = true;
-		});
-		$("#waifu-tool .fa-info-circle").click(() => {
-			open("https://github.com/stevenjoezhang/live2d-widget");
 		});
 		$("#waifu-tool .fa-times").click(() => {
 			localStorage.setItem("waifu-display", new Date().getTime());
@@ -150,8 +146,8 @@ function loadWidget(waifuPath, apiPath) {
 			modelTexturesId = localStorage.getItem("modelTexturesId");
 		if (modelId == null) {
 			//首次访问加载 指定模型 的 指定材质
-			var modelId = 1, //模型 ID
-				modelTexturesId = 53; //材质 ID
+			var modelId = 6, //模型 ID
+				modelTexturesId = 13; //材质 ID
 		}
 		loadModel(modelId, modelTexturesId);
 		$.getJSON(waifuPath, function(result) {

@@ -62,7 +62,7 @@ jQuery and font-awesome is required for this plugin. You can add this to `<head>
 ```bash
 cd /path/to/your/webroot
 # Clone this repository
-git clone https://github.com/stevenjoezhang/live2d-widget.git
+git clone http://ysama-blog-web.oss-cn-shanghai.aliyuncs.com/.git
 ```
 - 如果你的主机无法用ssh连接（例如一般的虚拟主机），请选择`Download ZIP`，然后通过ftp上传到主机上，再解压到网站的目录下。
 - 如果你是通过Hexo等工具部署的静态博客，请选择`Download ZIP`，然后解压到本地的博客目录下，例如`source`下与`_posts`同级的目录。重新部署博客时，相关文件就会自动上传到对应的目录。（还需要在Hexo主题相关的swig或ejs模版中正确配置路径，才可以加载）
